@@ -26,15 +26,17 @@ while (n<num_episodes):
     while (done == False):
         obs, reward, done, empty = env.step (next_action)
         print ('Next action ' + str(next_action))
-        print ('Obs ' + str(obs))
-        next_action = random.randint(0,numBlocks)
+        print ('Observation ' + str(obs))
+        next_action = [random.randint(0,numBlocks),random.randint(0,numBlocks)]
         #env.render()
         steps +=1    
         print (done)
     print ('New episode')
     ep_lengths.append(steps)
     n+=1
-    
-    print ("Average episode length " + str(sum(ep_lengths) / float(len(ep_lengths))))
+    print ('----------------')
+    print ('Number of blocks: ' + str(numBlocks))
+    print ('Number of episodes run: ' + str(num_episodes))
+    print ("Average episode length (steps) " + str(sum(ep_lengths) / float(len(ep_lengths))))
         #input("Press Enter to continue...")
         

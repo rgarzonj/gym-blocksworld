@@ -8,7 +8,7 @@ import subprocess
 import numpy as np
 import copy
 
-import io
+#import io
 import json
 import os
 
@@ -37,7 +37,8 @@ class BlocksWorldEnv(gym.Env):
 
     def __init__(self):
         numBlocks = self.readNumBlocksFromFile()
-        self.bwstates_path = './BWSTATES/bwstates.1/bwstates'
+        current_path = os.path.dirname(os.path.abspath(__file__))
+        self.bwstates_path = os.path.join(current_path,'BWSTATES/bwstates.1/bwstates')
         #self.bwstates_path = '/home/usuaris/rgarzonj/github/LSTMs/Blocksworld/GENERATOR/bwstates.1/bwstates'
 
         self.numBlocks = numBlocks
