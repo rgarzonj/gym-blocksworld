@@ -6,7 +6,7 @@ This implementation uses the [bwstates](http://users.cecs.anu.edu.au/~jks/bwstat
 
 Clone this repository.
 
-Download the bwstates sources from the [following ftp](ftp://arp.anu.edu.au/pub/bwstates.1.tar.gz) (In case you cannot find it you can download my compiled version also with the [sources here](https://drive.google.com/open?id=1vtimCnD2DcxsQfElhcdAqrAwD7dS_N0q)
+Download the bwstates sources from the [following ftp] ftp://arp.anu.edu.au/pub/bwstates.1.tar.gz (In case you cannot find it you can download my compiled version also with the [sources here](https://drive.google.com/open?id=1vtimCnD2DcxsQfElhcdAqrAwD7dS_N0q))
 
 Untar and unzip the file with
 `tar xvfz bwstates.1.tar.gz`
