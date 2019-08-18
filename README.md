@@ -24,7 +24,7 @@ Go to the folder containing the cloned repository (this folder should contain th
 
 The folder /examples includes the file runEnvironment.py 
 
-IMPORTANT: You need to create a file numBlocks.json and specify the number of blocks of your environment. See the file numBlocks.json in the folder /examples
+**IMPORTANT:** You need to specify the number of blocks in a file  numBlocks.json. See the file numBlocks.json in the folder /examples
 
 # How to change the number of blocks
 Edit the file numBlocks.json
@@ -37,10 +37,10 @@ For example for an environment of 3 Blocks:
 ![Blocksworld representation sample](/BW_sample.png)
 
 The representation for the above observation would be [3 1 0 0 0 2]
-The three first digits (3 1 0) are the current state of the environment. Every array position expresses the position of the block and a value of 0 represents the table or the floor.
+The three first digits (3 1 0) are the current state of the environment. Each array's position represents the position of the block and a value of 0 represents the table or the floor.
 
-For example, for the (3 1 0), 3 in the first position of the array means "Block 1 is on top of Block 3", 1 in the second position of the array means "Block 2 is on top of Block 1", finally 0 in the third position of the array means "Block 3 is on top of the table or the floor")
+For example, for the (3 1 0), the 3 in the first position of the array means "Block 1 is on top of Block 3", the 1 in the second position of the array means "Block 2 is on top of Block 1" and finally the 0 in the third position of the array means "Block 3 is on top of the table or the floor").
 
 The three last digits (0 0 2) are the goal state of the environment. For example (0 0 2) means "Block 1 is on top of the table", "Block 2 is on top of the table", "Block 3 is on top of Block ".
 
-For the actions the representation is a 2 positions array. The first position means which block to be moved, and the second value means the destination of such Block. Value of 0 represents the table or the floor. For example if next action is [1, 0] means "Move Block 1 to the table or to the floor"
+For the actions, the representation is a 2 position array. The first position indicates which block to be moved, and the second value indicates the destination of such block. A value of 0 represents the table or the floor. For example, if next action is [1, 0] means "Move Block 1 to the table or to the floor". If the action is [2, 1] would mean "Move Block 2 on top of Block 1".
